@@ -13,13 +13,9 @@ repositories {
 dependencies {
     implementation platform("io.quarkus:quarkus-bom:${quarkusVersion}")
     implementation project(':extra-lib')
-    implementation project(':runtime')
     testImplementation 'io.quarkus:quarkus-arc'
     testImplementation 'io.quarkus:quarkus-junit5'
     testImplementation 'io.quarkus:quarkus-test-common'
-    testImplementation "org.apache.camel.quarkus:camel-quarkus-bean:2.10.0"
-    testImplementation "org.apache.camel.quarkus:camel-quarkus-core:2.10.0"
-    testImplementation "org.apache.camel.quarkus:camel-quarkus-kafka:2.10.0"
     testImplementation project(path: ':extra-lib', configuration: 'testArtifacts')
 }
 
