@@ -15,6 +15,6 @@ dependencyResolutionManagement {
     }
 }
 
-include 'deployment', 'extra-lib', 'runtime', 'app'
+include 'extra-lib', 'app'
 
 rootProject.name = 'greeting-extension'
